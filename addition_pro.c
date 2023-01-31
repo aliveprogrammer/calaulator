@@ -61,7 +61,7 @@ void split_addition(){
 		*px=0,*py=0;
 		printf("px:%p py:%p x:%p y:%p\n",px,py,x,y);
 	}
-	
+
 	printf("run end\n");
 	
 }
