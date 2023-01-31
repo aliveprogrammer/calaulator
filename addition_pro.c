@@ -51,9 +51,9 @@ void split_addition(){
 			sig_overflow=1;
 
 		printf("len:%d digits:%d\n",len,digits);
-		fseek(foutput,-digits,SEEK_CUR);
+		fseek(foutput,-(digits-sig_overflow),SEEK_CUR);
 		printf("t1:%ld\n",ftell(foutput));
-		fputs(unit,foutput);
+		fputs(unit+sig_overflow,foutput);
 		printf("t2:%ld\n",ftell(foutput));
 		fseek(foutput,-len,SEEK_CUR);
 		printf("t3:%ld\n",ftell(foutput));
@@ -63,7 +63,7 @@ void split_addition(){
 	}
 
 	if(sig_overflow){
-		
+
 	}
 
 	printf("run end\n");
