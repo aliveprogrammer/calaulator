@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+//Can you see this???
 //format of input file
 //x\n\ny\n
 char *x=NULL;
