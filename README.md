@@ -1,0 +1,3 @@
+# calaulator
+Usually C can only calculate between long,int,...
+they were too small in some situation,so I tried to use a program to calculate big data
