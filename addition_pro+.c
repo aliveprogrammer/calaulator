@@ -66,7 +66,7 @@ void split_addition(){
 
 int main(){
 	struct timespec time1 = {0, 0}; 
-        struct timespec time2 = {0, 0};
+	struct timespec time2 = {0, 0};
 	clock_gettime(CLOCK_REALTIME, &time1);
 	finput=fopen("input.txt","r");
 	foutput=fopen("output.txt","w");
